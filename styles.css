@@ -75,15 +75,7 @@ background-repeat: no-repeat;
     border-radius: 41px;
     background: #E02C6D;
 }
-.prebook-container .btn{
-    padding-left: 50px;
-position: relative;
-}
-.prebook-container i{
-position: absolute;
-margin:18px 0px 0px -145px ;
-color: #fff;
-}
+
 /* sponsors section */
 .sponsors{
 width: 85%;
@@ -169,11 +161,14 @@ padding: 20px;
 
 
 /* making responsive */
-@media screen and(max-width:576px) {
+@media (max-width:576px) {
     #heading,
     #heading .list-container,
     #heading .nav-list ul{
         flex-direction: column;
+    }
+    .sponsors{
+        width: 100%;
     }
     #prebook,.sponsors{
         flex-direction: column;
@@ -186,8 +181,16 @@ padding: 20px;
         flex-direction: column-reverse;
         width: 100%;
     }
-
-
+    .prebook-container h1{
+        width: 90%;
+    }
+    .prebook-container p{
+        width: 90%;
+    }
+    .feature-content{
+     
+        margin-bottom: 50px;
+    }
 }
 
 
